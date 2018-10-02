@@ -1,6 +1,6 @@
 *{
 	box-sizing: border-box;
-	transition: all .1s ease-in;
+	transition: all .3s ease-in;
 }
 body,
 html{
@@ -28,7 +28,7 @@ html{
 }
 .people,
 .popular{
-	margin-right: 30px;
+	margin-right: 2%;
 
 }
 input[type="search"]{
@@ -38,9 +38,24 @@ input[type="search"]{
     width: 80%;
     color: #ec5a62;
 }
-input[type="image"]{
-	height: 60px;
-	width: 60px;
+input[type="search"]:focus{
+	outline: none;
+}
+.button{
+	width: 80px;
+	height: 80px;
+	border: none;
+	background: #f1f1f1;
+	transition: all .1s ease-in;
+}
+.button:focus{
+	outline: none;
+}
+.button:hover{
+	cursor: pointer;
+}
+.button:active{
+	transform: scale(0.7)
 }
 input::-webkit-input-placeholder { 
 	color: #c2c2c2; 
