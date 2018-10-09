@@ -19,6 +19,13 @@ html{
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
+.list{
+	font-size: 0;
+}
+.list h2 {
+	font-size: 14px;
+	text-transform: uppercase;
+}
 .people,
 .popular,
 .recent{
@@ -28,10 +35,11 @@ html{
 }
 .people,
 .popular{
-	margin-right: 2%;
+	margin-right: 5%;
 
 }
 input[type="search"]{
+	-webkit-appearance: none;
 	border: none;
 	background: #f1f1f1;
     font-size: 80px;
@@ -76,9 +84,8 @@ ul li a{
 	width: 100%;
 	color: #c4c4c4;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 0;
 	height: 55px;
-	overflow: hidden;
 }
 ul li a img{
 	display: inline-block;
@@ -87,10 +94,23 @@ ul li a img{
 	margin: 10px 20px 10px 10px;
 	vertical-align: middle;
 }
+ul li a span{
+	vertical-align: middle;
+	overflow: hidden;
+	width: calc(100% - 70px);
+    display: inline-block;
+    font-size: 14px;
+    max-height: 30px;
+}
 .people ul li a img{
 	border-radius: 50%;
 }
 ul li a:hover{
 	background: #e4e4e6;
 	color: #ec5a62;
+}
+button[type="submit"]{
+	background-image: url('../img/magnifier.svg');
+	background-repeat: no-repeat;		
+	background-size: 64px 64px;
 }
